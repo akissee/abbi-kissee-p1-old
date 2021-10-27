@@ -1,0 +1,111 @@
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #484848;
+  background-color: f1f1f1;
+}
+/* Header Background and Padding */
+.header {
+  overflow: hidden;
+  background-color: #fdf5e6;
+  padding: 20px 10px;
+}
+
+#greeting {
+  color: #ff9966;
+  text-shadow: 0.5px 0.25px 1px #484848;
+  padding: 1em;
+}
+
+/* Header Text */
+.header a {
+  float: left;
+  color: #484848;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Hover Styles */
+.header a:hover {
+  background-color: #ffcc99;
+  color: #484848;
+}
+
+/* Avtive Page Styles */
+.header a.active {
+  background-color: #ff9966;
+  color: #f1f1f1;
+}
+
+/* Float For Links */
+.header-right {
+  float: right;
+}
+
+/* For Responsive Nav Bar*/
+@media screen and (max-width: 550px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/** Styles for Contact Form **/
+
+label {
+  float: left;
+  width: 11em;
+  text-align: right;
+}
+input,
+select,
+textarea {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+#buttons input {
+  width: 2em;
+}
+fieldset {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-top: 0.5em;
+  background-color: #fdf5e6;
+  border-radius: 1em;
+}
+legend {
+  color: #ff9966;
+  font-weight: bold;
+  font-size: 85%;
+  margin-bottom: 0.5em;
+}
+#response {
+  color: #96d294;
+}
+input:required:invalid {
+  background-position: right top;
+  background-repeat: no-repeat;
+  border: 2px solid #ff9966;
+}
+input:focus:invalid {
+  background-position: right top;
+  background-repeat: no-repeat;
+  border: 2px solid #ff9966;
+}
+input:required:valid {
+  background-position: right top;
+  background-repeat: no-repeat;
+}
